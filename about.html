@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us – AI HUB</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .about-hero {
+      text-align: center; padding: 5rem 2rem 3rem;
+      background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(108,99,255,0.12) 0%, transparent 70%);
+    }
+    .about-hero h1 { font-size: 3rem; font-weight: 900; margin-bottom: 1rem; }
+    .about-hero h1 span { background: var(--gradient); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .about-hero p { color: var(--text-muted); font-size: 1.1rem; max-width: 600px; margin: 0 auto; }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    @media(max-width:768px){ .about-grid { grid-template-columns: 1fr; gap: 2rem; } }
+    .about-text h2 { font-size: 2rem; font-weight: 800; margin-bottom: 1.2rem; line-height: 1.2; }
+    .about-text p { color: var(--text-muted); margin-bottom: 1rem; font-size: 0.95rem; }
+
+    .about-visual {
+      background: var(--card-bg); border: 1px solid var(--card-border);
+      border-radius: 20px; padding: 2.5rem; text-align: center;
+    }
+    .about-visual-icon { font-size: 5rem; margin-bottom: 1.5rem; }
+
+    .values-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+    .value-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 12px; padding: 1.5rem; }
+    .value-icon { font-size: 1.5rem; margin-bottom: 0.75rem; }
+    .value-card h4 { font-size: 0.95rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .value-card p { font-size: 0.82rem; color: var(--text-muted); }
+
+    .team-section { background: var(--dark2); border-radius: 20px; margin: 0 2rem 2rem; padding: 4rem 2rem; }
+    .team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1.5rem; max-width: 1300px; margin: 0 auto; }
+    .team-card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 14px; padding: 2rem 1.5rem; text-align: center; }
+    .team-avatar {
+      width: 70px; height: 70px; border-radius: 50%; margin: 0 auto 1rem;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem; font-weight: 800; color: #fff;
+    }
+    .team-card h4 { font-size: 1rem; font-weight: 700; }
+    .team-card p { font-size: 0.82rem; color: var(--text-muted); margin-top: 0.25rem; }
+  </style>
+</head>
+<body>
+  <script src="navbar.js"></script>
+
+  <div class="about-hero">
+    <div class="section-tag">About Us</div>
+    <h1>We <span>DELIVER</span> the Best AI Tools</h1>
+    <p>AI HUB is your trusted directory for discovering, comparing, and accessing the world's best artificial intelligence tools.</p>
+  </div>
+
+  <section>
+    <div class="about-grid">
+      <div class="about-text">
+        <h2>Our Mission: Make AI Accessible to Everyone</h2>
+        <p>The AI landscape is evolving at breakneck speed. New tools emerge daily, making it overwhelming to find what's truly useful. AI HUB cuts through the noise.</p>
+        <p>We manually review every tool listed on our platform. Our team tests usability, reliability, and real-world value before featuring anything. No spam, no fake tools.</p>
+        <p>Whether you're a developer, designer, marketer, student, or curious explorer — AI HUB has something for you. All tools are organized into intuitive categories so you find what you need, fast.</p>
+        <a class="btn-primary" style="margin-top:1rem" href="contact.html">Get in Touch</a>
+      </div>
+      <div>
+        <div class="about-visual">
+          <div class="about-visual-icon">🤖</div>
+          <h3 style="font-size:1.3rem;font-weight:800;margin-bottom:0.5rem">AI HUB</h3>
+          <p style="color:var(--text-muted);font-size:0.9rem">Launched 2026 &middot; 100+ Tools &middot; 10 Categories</p>
+        </div>
+        <div class="values-grid">
+          <div class="value-card"><div class="value-icon">✅</div><h4>Checked</h4><p>Every tool is hand-reviewed by our team</p></div>
+          <div class="value-card"><div class="value-icon">🆓</div><h4>Free</h4><p>AI HUB is completely free to use</p></div>
+          <div class="value-card"><div class="value-icon">🔄</div><h4>Updated</h4><p>New tools added every week</p></div>
+          <div class="value-card"><div class="value-icon">🌐</div><h4>Global</h4><p>Tools for users worldwide</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="team-section">
+    <div style="text-align:center;margin-bottom:3rem">
+      <div class="section-tag">Our Team</div>
+      <h2 style="font-size:2.2rem;font-weight:800;margin-bottom:0.75rem">Meet the People Behind AI HUB</h2>
+      <p style="color:var(--text-muted);font-size:1.05rem">A small, passionate team obsessed with AI and great UX</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#6C63FF,#00D4AA)">S</div>
+        <h4>SHUBHAM SHARMA</h4><p></p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#FF6B6B,#FFD93D)">M</div>
+        <h4>MUKUL THAKUR</h4><p></p>
+      </div>
+      <div class="team-card">
+        <div class="team-avatar" style="background:linear-gradient(135deg,#00D4AA,#3A86FF)">Y</div>
+        <h4>YOGESH</h4><p></p>
+      </div>
+      
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">⚡ AI HUB</div>
+      <p>Your ultimate AI tools directory. &copy; 2026 AI HUB. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
